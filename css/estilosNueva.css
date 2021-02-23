@@ -1,0 +1,390 @@
+.habitacion {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 20px; }
+  .habitacion .habitacion__tipo {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .habitacion .habitacion__tipo .habitacion__tipo__nombre {
+      color: #00a2a8;
+      width: 20%;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center; }
+    .habitacion .habitacion__tipo .habitacion__tipo__detalle {
+      width: 20%;
+      padding-right: 4%;
+      font-weight: bolder; }
+    .habitacion .habitacion__tipo .habitacion__tipo__items {
+      list-style-image: url("/imagenes/check.png");
+      width: 15%; }
+
+.habitacion__todas {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center; }
+
+@media (max-width: 1200px) {
+  .habitacion {
+    margin-top: 10px; }
+    .habitacion .habitacion__tipo {
+      margin: 30px 0; }
+      .habitacion .habitacion__tipo img {
+        width: 35%; } }
+
+@media (max-width: 900px) {
+  .habitacion {
+    margin-top: 0px; }
+    .habitacion .habitacion__tipo .habitacion__tipo__nombre {
+      font-size: 25px; }
+    .habitacion .habitacion__tipo .habitacion__tipo__detalle {
+      font-size: 14px; }
+  .habitacion__todas {
+    font-size: 18px;
+    margin-top: 0px; } }
+
+@media (max-width: 600px) {
+  .habitacion .habitacion__tipo {
+    flex-wrap: wrap;
+    margin: 0 0 30px 0; }
+    .habitacion .habitacion__tipo img {
+      width: 50%; }
+    .habitacion .habitacion__tipo .habitacion__tipo__nombre {
+      width: 50%; }
+    .habitacion .habitacion__tipo .habitacion__tipo__detalle {
+      width: 40%;
+      font-size: 16px; }
+    .habitacion .habitacion__tipo .habitacion__tipo__items {
+      width: 40%;
+      padding-left: 10%; }
+  .habitacion__todas {
+    font-size: 16px; } }
+
+@media (max-width: 400px) {
+  .titulo__pagina {
+    font-size: 190%; } }
+
+.gastronomia {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 0; }
+  .gastronomia .gastronomia__presentacion {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .gastronomia .gastronomia__presentacion .gastronomia__presentacion__titulo {
+      text-align: center; }
+    .gastronomia .gastronomia__presentacion .gastronomia__presentacion__descripcion {
+      font-size: 18px;
+      text-align: justify; }
+
+.restoBar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 6% 0;
+  background-color: lightblue;
+  align-items: center;
+  height: 360px;
+  text-align: center; }
+  .restoBar h4 {
+    margin-top: 10px;
+    color: #3b3b3b; }
+
+.spa {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8% 0; }
+  .spa .spa__presentacion {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */ }
+    .spa .spa__presentacion .spa__presentacion__titulo {
+      text-align: center; }
+    .spa .spa__presentacion .spa__presentacion__descripcion {
+      font-size: 18px;
+      text-align: justify;
+      /* width: 80%; */ }
+
+.galeria {
+  margin: 45px 65px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .galeria li img {
+    width: 400px;
+    padding-bottom: 1%; }
+
+.formulario {
+  background-color: lightblue;
+  padding: 1%;
+  width: 60vw;
+  margin-left: 20vw; }
+
+.ubicacion {
+  margin-top: 10vh; }
+  .ubicacion .ubicacion__titulo {
+    align-self: center; }
+
+@media (max-width: 992px) {
+  .flario {
+    margin-left: 2vw;
+    width: 96vw; } }
+
+.gastronomia .gastronomia__presentacion .gastronomia__presentacion__titulo, .spa .spa__presentacion .spa__presentacion__titulo, .ubicacion .ubicacion__titulo, .section__venta .section__venta__titulo, .opiniones .opiniones__titulo {
+  color: #00a2a8;
+  font-weight: bold; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Raleway", sans-serif; }
+
+h4 {
+  color: darkblue;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.titulo__pagina {
+  font-size: 240%;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  color: #02878b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+/* MENU */
+.header__nav {
+  background-color: #fdbc42;
+  font-weight: bold; }
+  .header__nav .header__nav__logo {
+    border-radius: 50%; }
+  .header__nav .header__nav__menu {
+    width: 100%;
+    padding-left: 20%;
+    justify-content: space-evenly;
+    letter-spacing: 2px; }
+    .header__nav .header__nav__menu .color-item {
+      color: white; }
+      .header__nav .header__nav__menu .color-item:hover {
+        color: #00a2a8; }
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .color-item {
+  color: white; }
+
+/* CARRUSEL */
+.section__carrusel {
+  margin-top: 7vh; }
+
+/* VENTA */
+@keyframes opiniones {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+
+.section__venta {
+  display: flex; }
+  .section__venta .section__venta__titulo {
+    text-align: center;
+    animation: zoomIn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
+  .section__venta .section__venta__parrafo {
+    font-weight: 600;
+    text-align: justify;
+    padding-left: 5vw;
+    padding-right: 5vw; }
+
+/* GALERIA INDEX */
+.section__galeria {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style-type: none; }
+  .section__galeria .section__galeria__img {
+    width: 20rem;
+    height: 10rem;
+    padding-top: 2%; }
+    .section__galeria .section__galeria__img:hover {
+      transform: scale(1.25); }
+
+/* TESTIMONIOS */
+.opiniones {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1.1fr 2fr;
+  grid-template-rows: 0.7fr 2fr;
+  grid-template-areas: "titulo titulo" "imagen texto";
+  gap: 0.5rem 0;
+  justify-items: center;
+  align-items: center;
+  /* width: 100%; */ }
+  .opiniones .opiniones__titulo {
+    grid-area: titulo;
+    text-align: center;
+    animation: opiniones 4s infinite; }
+  .opiniones .opiniones__imagen {
+    grid-area: imagen; }
+    .opiniones .opiniones__imagen .opiniones__imagen__img {
+      border-radius: 5%; }
+  .opiniones .opiniones__texto {
+    grid-area: texto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .opiniones .opiniones__texto .opiniones__detalle {
+      font-size: 14px;
+      font-style: italic;
+      width: 14rem;
+      height: 15rem;
+      margin: 1rem;
+      padding: 1.5rem 1rem;
+      border: solid 1px #fdbc42;
+      box-shadow: 0 0 10px #fdbc42;
+      border-radius: 5%; }
+
+/* FOOTER */
+.contenedor__footer {
+  background-color: #fdbc42;
+  margin-top: 30px;
+  width: 98.9%; }
+  .contenedor__footer .contenedor__footer__detalle {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    margin-top: 1.5vh;
+    height: auto;
+    justify-content: space-around; }
+    .contenedor__footer .contenedor__footer__detalle p {
+      padding-left: 1%; }
+  .contenedor__footer .contenedor__footer__iconosRedes {
+    background-color: #fdbc42;
+    display: flex;
+    justify-content: flex-end; }
+    .contenedor__footer .contenedor__footer__iconosRedes .contenedor__footer__icono {
+      background-color: lightgrey;
+      padding: 0 1px;
+      align-self: center; }
+
+/* MEDIA QUERIES */
+@media (min-width: 992px) {
+  .header__nav {
+    height: 70px; }
+    .header__nav .header__nav__logo {
+      margin-top: 80px; }
+  .section__venta {
+    height: 25rem; }
+    .section__venta .section__venta__parrafo {
+      font-size: 20px; } }
+
+@media (max-width: 1200px) {
+  .opiniones {
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "titulo titulo titulo imagen imagen imagen" "texto texto texto texto texto texto";
+    margin: 5rem 0 2rem 0; }
+    .opiniones .opiniones__titulo {
+      padding-left: 5rem; } }
+
+@media (max-width: 992px) {
+  .section__carrusel {
+    margin-top: 12vh; }
+  .header__nav__logo {
+    width: 50%; }
+  .section__venta {
+    height: 18rem; }
+    .section__venta .section__venta__titulo {
+      font-size: 28px; }
+    .section__venta .section__venta__parrafo {
+      font-size: 18px; }
+  .contenedor__footer {
+    width: 100%; }
+    .contenedor__footer .contenedor__footer__detalle {
+      flex-direction: column; }
+    .contenedor__footer .contenedor__footer__iconosRedes {
+      flex-direction: column;
+      align-self: center; }
+      .contenedor__footer .contenedor__footer__iconosRedes .contenedor__footer__icono {
+        padding: 0px; }
+  .titulo__pagina {
+    margin-top: 9rem; } }
+
+@media (max-width: 800px) {
+  .opiniones {
+    grid-template-rows: 1.5fr 2fr;
+    margin-top: 0;
+    gap: 0; }
+    .opiniones .opiniones__titulo {
+      padding-left: 2rem; }
+    .opiniones .opiniones__imagen__img {
+      margin-right: 0.5rem; }
+    .opiniones .opiniones__texto {
+      justify-content: center; } }
+
+@media (max-width: 600px) {
+  .section__venta {
+    height: 12rem; }
+    .section__venta .section__venta__titulo {
+      font-size: 22px; }
+    .section__venta .section__venta__parrafo {
+      font-size: 16px; }
+  .contenedor__footer__detalle p {
+    font-size: 0.8rem; } }
+
+@media (max-width: 545px) {
+  .opiniones {
+    grid-template-rows: 1.1fr 2fr; }
+    .opiniones .opiniones__titulo {
+      padding-right: 2rem; }
+      .opiniones .opiniones__titulo h2 {
+        font-size: 22px; }
+    .opiniones .opiniones__imagen__img {
+      width: 100%; } }
+
+@media (max-width: 513px) {
+  .opiniones {
+    grid-template-rows: 0.7fr 2fr; } }
+
+@media (max-width: 500px) {
+  .section__venta .section__venta__titulo {
+    font-size: 18px; }
+  .section__venta .section__venta__parrafo {
+    font-size: 14px; } }
+
+@media (max-width: 400px) {
+  .header__nav__logo {
+    width: 40%; }
+  .section__carrusel {
+    margin-top: 15vh; }
+  .section__venta .section__venta__titulo {
+    font-size: 15px; }
+  .section__venta .section__venta__parrafo {
+    font-size: 12px; }
+  .opiniones {
+    grid-template-rows: 0.6fr 2fr; }
+  .contenedor__footer {
+    flex-wrap: nowrap; }
+    .contenedor__footer .contenedor__footer__detalle p {
+      font-size: 0.7rem; } }
